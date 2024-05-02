@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Feedback</h1>
+    <p id="description">Thanks for attending the Great event! Please take a minute to give us your feedback so we can learn from your experience. We are looking forward to hear your feedback!</p>
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label">Enter your name: <input id="name" type="text" required placeholder="James Bond"></label>
+      <label id="email-label">Enter your e-mail: <input id="email" type="email" required placeholder="jamesbond@mi6.uk"></label>
+      <label id="number-label">Your age: <input id="number" type="number" required min="13" max="120" placeholder="18"></label>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown">What did you like most about our event?
+      <select id="dropdown">
+        <option value="">(select one)</option>
+            <option value="1">Tasty coffee</option>
+            <option value="2">Amazing sandwiches</option>
+            <option value="3">Warming atmosphere</option>
+            <option value="4">Other</option>
+      </select>
+    </fieldset>
+        <fieldset>
+      <label for="feedback">Please give detailed feedback
+          <textarea id="feedback" name="feedback" rows="3" cols="30" placeholder="The most I like about..."></textarea>
+      </label>
+      </fieldset>
+    <fieldset>
+        <legend>Did you meet new friends?</legend>
+        <label for="yes-friend"><input id="yes-friend" type="radio" name="friends" class="inline" checked value="1"/> Yes</label>
+        <label for="no-friend"><input id="no-friend" type="radio" name="friends" class="inline" value="2"/> No</label>
+      </fieldset>
+      <label for="email-news">
+        <input class="inline" id="email-news" type="checkbox" required name="email-news" value="3"/> I want to receive Great news from Great host via e-mail!</a>
+      </label>
+      <label for="sms-news">
+        <input class="inline" id="sms-news" type="checkbox" required name="sms-news" value="4"/> I want to receive Great news from Great host via sms!</a>
+      </label>
+
+      <input type="submit" id="submit" value="Submit" />
+
+    </form>
+  </body>
